@@ -3,57 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intelligent-Workflow-Solutions</title>
+  <title>Intelligent-Workflow-Solutions | Software On-Demand</title>
   <style>
+    /* === General Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f4f4f4;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
       color: #333;
     }
-    h1 {
-      color: #222;
+
+    /* === Header === */
+    header {
+      background: linear-gradient(135deg, #2b5876, #4e4376);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* === Section === */
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h2 {
-      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #222;
+      font-size: 1.8rem;
+      border-left: 4px solid #4e4376;
+      padding-left: 10px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    ul li {
-      margin: 8px 0;
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
     }
-    .contact {
-      margin-top: 30px;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #4e4376;
+    }
+
+    /* === CTA Section === */
+    .cta {
+      background: #4e4376;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 50px;
+    }
+    .cta h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    .cta a {
+      display: inline-block;
+      background: #ff6f61;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #e85b50;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #f1f1f1;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1># Intelligent-Workflow-Solutions</h1>
+  <!-- Header -->
+  <header>
+    <h1>Intelligent-Workflow-Solutions</h1>
+    <p>AI-driven software on-demand | Automation | Scalable Tech Solutions</p>
+  </header>
 
-  <p>Welcome to our official repository.<br>
-  We build <strong>custom bots, automation tools, and AI-driven solutions</strong> designed to simplify complex workflows and deliver measurable results.</p>
+  <!-- What We Do -->
+  <section>
+    <h2>What We Do</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🤖 AI-Powered Bots</h3>
+        <p>We build custom bots that automate repetitive tasks and optimize efficiency for any business sector.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Workflow Automation</h3>
+        <p>End-to-end automation solutions that simplify operations and reduce costs.</p>
+      </div>
+      <div class="card">
+        <h3>💳 Payment Integration</h3>
+        <p>Secure integration of crypto and fiat payment APIs tailored for global scalability.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Scalable Software</h3>
+        <p>From startups to enterprises, our solutions grow with your business worldwide.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>What We Do</h2>
-  <ul>
-    <li>🤖 AI-powered bots on demand</li>
-    <li>⚡ Intelligent workflow automation</li>
-    <li>💳 Crypto & fiat payment integration</li>
-    <li>🌍 Scalable software solutions for global use</li>
-  </ul>
+  <!-- Why Choose Us -->
+  <section>
+    <h2>Why Choose Us</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🚀 Fast & Reliable</h3>
+        <p>Rapid development cycles with high-quality, tested software solutions.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Secure by Design</h3>
+        <p>All systems are built with compliance, security, and performance in mind.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Tailored for You</h3>
+        <p>We deliver solutions that fit your exact business model and industry needs.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>Fast, reliable, and secure development</li>
-    <li>Tailored solutions for every industry</li>
-    <li>Future-proof systems with AI & automation</li>
-  </ul>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to transform your workflows?</h2>
+    <p>Contact us today and let’s build the future of your business together.</p>
+    <a href="mailto:salvatoreantonio666@gmail.com">📧 Get in Touch</a>
+  </section>
 
-  <div class="contact">
-    <p>📧 Email: <a href="mailto:salvatoreantonio666@gmail.com">salvatoreantonio666@gmail.com</a></p>
-    <p>🌐 Website: (coming soon)</p>
-  </div>
+  <!-- Footer -->
+  <footer>
+    © 2025 Intelligent-Workflow-Solutions | All rights reserved.
+  </footer>
 </body>
 </html>
